@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	    My Site 3
+	    My Site 0
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
@@ -38,6 +38,16 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-right:0;
 }
 
+
+/* Sizes */
+
+.bloc-lg{
+	padding:100px 50px;
+}
+.bloc-sm{
+	padding:20px 50px;
+}
+
 /* = Full Screen Blocs 
 -------------------------------------------------------------- */
 
@@ -66,6 +76,73 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 .bloc-fill-screen .fill-bloc-bottom-edge{
 	align-self: flex-end;
+}
+
+/* = Full Width Blocs 
+-------------------------------------------------------------- */
+
+.full-width-bloc{
+	padding-left:0;
+	padding-right:0;
+}
+.full-width-bloc .container{
+	width:100%;
+	max-width:100%!important;
+}
+.full-width-bloc .carousel img{
+	width:100%;
+	height:auto;
+}
+
+
+/* Dark theme */
+
+.d-bloc{
+	color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+	color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+	border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+	border-color:rgba(255,255,255,.2);
+}
+.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+	color:rgba(255,255,255,.6);
+}
+.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
+	color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
+.d-bloc .card{
+	color:rgba(0,0,0,.5);
+}
+.d-bloc .card button:hover{
+	color:rgba(0,0,0,.7);
+}
+.d-bloc .card icon{
+	border-color:rgba(0,0,0,.7);
+}
+.d-bloc .card .divider-h span{
+	border-color:rgba(0,0,0,.1);
+}
+.d-bloc .card .a-btn{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .card .a-btn:hover{
+	color:rgba(0,0,0,1);
+}
+.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
+	color:rgba(0,0,0,.7);
+	border-color:rgba(0,0,0,.3);
 }
 
 
@@ -97,6 +174,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	border-color:rgba(0,0,0,.3);
 }
 
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
+
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -104,6 +187,16 @@ a:hover{text-decoration: none; cursor:pointer;}
 .hero .hero-nav{
 	padding-left:inherit;
 	padding-right:inherit;
+}
+/* Rounded Bars Menu Icon */
+.navbar-light .menu-icon-rounded-bars .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-dark .menu-icon-rounded-bars .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggle.menu-icon-rounded-bars{
+	margin-top:7px!important;
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	color: rgb(64, 64, 64);
@@ -123,6 +216,10 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -151,6 +248,8 @@ button{
 
 
 
+/* = Cards
+-------------------------------------------------------------- */
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
 }
@@ -188,6 +287,11 @@ button{
 	opacity: 1;
 }
 
+/* Hide Object */
+.object-hidden{
+	display:none;
+}
+
 /* = Custom Styling
 -------------------------------------------------------------- */
 
@@ -197,10 +301,103 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .container{
 	max-width:1140px;
 }
+.navbar-brand img{
+	width:50px;
+}
+.link-style{
+	line-height:25px;
+	font-size:30px;
+}
+.img-style{
+	width:528px;
+	opacity:0.8;
+}
+.carousel-style{
+	width:100%;
+}
+.h2-style{
+	font-size:25px;
+}
+.p-style{
+	font-size:18px;
+}
+.h3-style{
+	font-size:18px;
+}
+.h3-记账明细页-style{
+	font-size:18px;
+}
+.h3-5-style{
+	font-size:18px;
+}
+.h3-结果呈现页-style{
+	font-size:18px;
+}
+.img-bloc-6-style{
+	width:138px;
+	height:138px;
+}
+.img-谈舒杰二-style{
+	width:150px;
+	height:150px;
+}
+.h4-style{
+	line-height:20px;
+}
+.team-card{
+	min-height:350px;
+}
+.h5-style{
+	font-size:18px;
+}
+.img-logo-style{
+	width:100px;
+}
+.h3-bloc-2-style{
+	font-size:18px;
+}
+.h3-aabills分账小程序项目-style{
+	font-size:25px;
+}
+.h1-style{
+	font-size:25px;
+}
+.h1-bloc-3-style{
+	font-size:25px;
+}
+.h3-bloc-3-style{
+	font-size:18px;
+}
+.h3-3-style{
+	font-size:18px;
+}
+.h1-3-style{
+	font-size:25px;
+}
+.img-11-style{
+	width:100px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
+/* Background colour styles */
+
+.bgc-cornflower-blue{
+	background-color:#5B92F2;
+}
+.bgc-tea-green{
+	background-color:#C7FFD9;
+}
+.bgc-vivid-tangerine{
+	background-color:#FDB183;
+}
+.bgc-maya-blue{
+	background-color:#55BBEF;
+}
+.bgc-black{
+	background-color:#000000;
+}
 
 
 
@@ -274,3 +471,23 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	   height: 320px;
     }
 }
+@media (max-width: 767px){
+	.text-right{
+	}
+	.text-left{
+	}
+	.text-center{
+	}
+	
+}
+
+@media (max-width: 575px){
+	.carousel-style{
+		width:100%;
+	}
+	.footer-link{
+		text-align:center;
+	}
+	
+}
+
