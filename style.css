@@ -95,6 +95,19 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-repeat{
+	background:repeat;
+}
+
+
 /* Dark theme */
 
 .d-bloc{
@@ -343,6 +356,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .h4-style{
 	line-height:20px;
+	width:100%;
+	font-size:24px;
 }
 .team-card{
 	min-height:350px;
@@ -377,14 +392,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .img-11-style{
 	width:100px;
 }
+.img-7-style{
+	width:150px;
+	height:150px;
+}
+.h4-film-projects-style{
+	line-height:20px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
-.bgc-cornflower-blue{
-	background-color:#5B92F2;
+.bgc-maya-blue{
+	background-color:#55BBEF;
 }
 .bgc-tea-green{
 	background-color:#C7FFD9;
@@ -395,10 +417,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bgc-black{
 	background-color:#000000;
 }
-.bgc-maya-blue{
-	background-color:#55BBEF;
-}
 
+/* Bloc image backgrounds */
+
+.bg-crosses-l-bg{
+	background-image:url("img/crosses-l-bg.png");
+}
+.bg-dots-bg{
+	background-image:url("img/dots-bg.png");
+}
+.bg-grid-bg{
+	background-image:url("img/grid-bg.png");
+}
 
 
 
