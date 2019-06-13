@@ -106,6 +106,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bg-repeat{
 	background:repeat;
 }
+.bg-t-edge{
+	background: top no-repeat;
+}
 
 
 /* Dark theme */
@@ -278,6 +281,15 @@ button{
 
 
 
+/* iFrame */
+
+iframe{
+	border:0;
+}
+
+.hide-indicators{
+	display:none;
+}
 
 
 /* ScrollToTop button */
@@ -375,10 +387,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size:25px;
 }
 .h1-style{
-	font-size:25px;
+	font-size:27px;
 }
 .h1-bloc-3-style{
-	font-size:25px;
+	font-size:27px;
 }
 .h3-bloc-3-style{
 	font-size:18px;
@@ -399,23 +411,50 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h4-film-projects-style{
 	line-height:20px;
 }
+.h1-共青团志愿服务网络平台-style{
+	font-size:27px;
+}
+.h3-1-style{
+	font-size:18px;
+	line-height:21px;
+}
+.h1-bloc-5-style{
+	font-size:27px;
+	line-height:32px;
+}
+.h3-bloc-5-style{
+	font-size:18px;
+	line-height:21px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
-.bgc-maya-blue{
-	background-color:#55BBEF;
-}
 .bgc-tea-green{
 	background-color:#C7FFD9;
 }
 .bgc-vivid-tangerine{
 	background-color:#FDB183;
 }
-.bgc-black{
-	background-color:#000000;
+.bgc-white{
+	background-color:#FFFFFF;
+}
+.bgc-gray-htmlcss-gray{
+	background-color:#7F7F7F;
+}
+.bgc-white-2{
+	background-color:#FFFFFF;
+}
+.bgc-maya-blue{
+	background-color:#55BBEF;
+}
+
+/* Text colour styles */
+
+.tc-white{
+	color:#FFFFFF!important;
 }
 
 /* Bloc image backgrounds */
@@ -428,6 +467,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-grid-bg{
 	background-image:url("img/grid-bg.png");
+}
+.bg-background-purple{
+	background-image:url("img/background-purple.png");
 }
 
 
